@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 21px;
+}
+
+a {
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+.container {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+header{
+    padding: 50px 0;
+}
+
+header .logo {
+    font-size: 40px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+header nav{
+    float: right;
+    width: 50%;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    position: relative;
+}
+
+header nav ul li, footer nav:not(.footer--menu) ul li {
+    display: inline-block;
+}
+
+header nav ul li a, footer nav ul li a {
+    color: black;
+    font-size: 16px;
+}
+
+header nav ul li:not(.btn) a:hover, footer nav ul li:not(.btn) a:hover, .top nav ul li:not(.active) a:hover{
+    border-bottom: 3px solid #10B981;
+}
+
+header nav ul li.btn a {
+    color: white;
+    background: #10B981;
+    padding: 12px 25px;
+    border-radius: 16px;
+    transition: all 0.3s ease;
+}
+
+header nav ul li.btn a:hover, .top nav ul li.active a:hover {
+    background: #0f9c6e;
+}
+
+.hero {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+.hero--info {
+    width: 600px;
+    margin: 10px
+}
+
+.hero--info h1 {
+    font-size: 64px;
+    font-weight: 600;
+}
+
+.hero--info p {
+    font-weight: 500;
+    line-height: 35px;
+    margin: 20px 0;
+}
+
+.hero--info .btn, .featured--info .btn {
+    background: #10B981;
+    color: white;
+    border-radius: 16px;
+    width: 220px;
+    padding: 20px 0px;
+    border: 0;
+    transition: all 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.hero--info .btn:hover {
+    background: #0f9c6e;
+}
+
+.hero img {
+    max-width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    align-self: center;
+}
+
+.featured {
+    background: #845EC2;
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.featured--info{
+    width: 600px;
+    margin: 10px;
+    margin-left: auto;
+}
+
+.featured--info h2 {
+    color: white;
+    font-size: 44px;
+    font-weight: 600;
+}
+
+.featured--info p {
+    color: white;
+    font-weight: 500;
+    line-height: 35px;
+    margin: 20px 0;
+}
+
+.featured--img {
+    max-width: 40%;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    align-self: center;
+}
+
+.featured h1 {
+    font-size: 60px;
+}
+
+.top {
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 100px;
+}
+
+.top h1 {
+    text-align: center;
+    font-size: 44px;
+    font-weight: 600;
+}
+
+.top nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.top nav ul li {
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    align-content: center;
+    padding: 8px;
+}
+
+.active {
+    width: fit-content;
+    height: 91px;
+    background-color: #10B981;
+    color: white;
+    border-radius: 50%;
+    margin: 30px;
+    transition: all 0.3s ease;
+}
+
+.active:hover, .top nav ul li.active a:hover {
+    background-color: #0f9c6e;
+}
+
+.active a {
+    padding: 0 32px;
+    transition: all 0.3s ease;
+}
+
+.non-active {
+    width: fit-content;
+    height: 91px;
+    border-radius: 50%;
+    margin: 30px;
+}
+
+footer {
+    padding: 50px 0;
+    margin: 10px 0;
+    border-top: 1px solid #E5E7EB;
+}
+
+.footer--info {
+    float: left;
+    width: 25%;
+}
+
+.footer--info ul li {
+    margin: 0 25px 0 0;
+}
+
+.contacts {
+    float: right;
+    width: 10%;
+}
+
+.contacts ul li {
+    margin: 10px;
+    transition: all 0.3s ease;
+}
+
+.contacts ul li :hover {
+    transform: scale(1.1);
+}
+
+.footer--menu {
+    float: right;
+    width: 100%;
+}
+
+.footer--menu ul {
+    list-style: none;
+}
+
+.footer--menu p {
+    color: #10B981;
+    padding-bottom: 10px;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.footer--menu ul li {
+    display: block;
+    padding: 8px 0;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.menu {
+    display: flex;
+    padding-bottom: 50px;
+}
+
+.subscribe {
+    margin-bottom: 40px;
+}
+
+.subscribe p {
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.subscribe form input[type="email"] {
+    padding: 12px;
+    border: 1px solid #D1D5DB;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 400;
+    width: 200px;
+    margin-right: 10px;
+}
+
+.subscribe form .btn {
+    padding: 10px;
+    border-radius: 8px;
+    background: #10B981;
+    color: white;
+    border: 0;
+    transition: all 0.3s ease;
+}
+
+.subscribe form .btn:hover {
+    background: #0f9c6e;
+}
+
+.subscribe--form {
+    display: flex;
+    align-items: center;
+}
+
+.headphones {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.headphones h3 {
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.headphones h2 {
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.headphones p {
+    font-size: 11px;
+    font-weight: 500;
+    color: #888888;
+}
+
+.headphones span {
+    width: 200px;
+    height: 70px;
+    background: white;
+    display: block;
+    align-self: center;
+    margin-top: 30px;
+    border-radius: 8px;
+    margin: 0 auto;
+
+    position: relative;
+    bottom: 25px;
+}
+
+.headphones img {
+    position: relative;
+    top: 25px;
+    margin: 0 auto;
+}
+
+.headphones .block {
+    text-align: left;
+    width: 250px;
+    height: 350px;
+    background: #845EC2;
+    border-radius: 16px;
+}
