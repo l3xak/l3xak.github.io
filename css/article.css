@@ -20,8 +20,11 @@ img{
 }
 
 .container {
-    width: 1400px;
+    max-width: 1400px;
+    width: 100%;
     margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 header{
@@ -202,4 +205,144 @@ footer {
     border-radius: 16px;
     margin-top: 10px;
     margin-bottom: 30px;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Tablet (768px and below) */
+@media (max-width: 768px) {
+    header {
+        padding: 30px 0;
+    }
+
+    header .logo {
+        font-size: 32px;
+    }
+
+    header nav {
+        float: none;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    header nav ul {
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    header nav ul li {
+        margin: 5px;
+    }
+
+    .article {
+        width: 90%;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .footer--menu {
+        width: 45%;
+    }
+
+    .subscribe {
+        width: 100%;
+    }
+
+    .footer--info {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .contacts {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .contacts ul {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* Mobile (below 480px) */
+@media (max-width: 480px) {
+    body {
+        font-size: 18px;
+    }
+
+    header .logo {
+        font-size: 28px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 5px 0;
+    }
+
+    header nav ul li a {
+        font-size: 16px;
+    }
+
+    .article {
+        width: 95%;
+    }
+
+    .article_title h2 {
+        font-size: 24px;
+    }
+
+    .article_title h3 {
+        font-size: 14px;
+    }
+
+    .article p {
+        font-size: 14px;
+    }
+
+    .menu {
+        flex-direction: column;
+    }
+
+    .footer--menu {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .subscribe p {
+        font-size: 20px;
+    }
+
+    .subscribe form {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .subscribe form input[type="email"] {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .subscribe form .btn {
+        width: 100%;
+    }
+
+    .footer--info ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer--info ul li {
+        margin: 10px 0;
+    }
 }

@@ -20,8 +20,11 @@ img{
 }
 
 .container {
-    width: 1400px;
+    max-width: 1400px;
+    width: 100%;
     margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 header{
@@ -361,4 +364,313 @@ footer {
     height: 350px;
     background: #845EC2;
     border-radius: 16px;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Tablet and smaller desktops (1024px and below) */
+@media (max-width: 1024px) {
+    header nav {
+        width: 60%;
+    }
+
+    header nav ul {
+        gap: 10px;
+    }
+
+    header nav ul li a {
+        font-size: 14px;
+    }
+
+    header nav ul li.btn a {
+        padding: 10px 15px;
+    }
+
+    .hero--info {
+        width: 50%;
+    }
+
+    .hero--info h1 {
+        font-size: 48px;
+    }
+
+    .hero img {
+        max-width: 35%;
+    }
+
+    .featured--info {
+        width: 50%;
+    }
+
+    .featured--info h2 {
+        font-size: 36px;
+    }
+
+    .headphones {
+        width: 85%;
+    }
+
+    .headphones .block {
+        width: 220px;
+        height: 320px;
+    }
+}
+
+/* Tablet (768px to 1024px) */
+@media (max-width: 768px) {
+    header {
+        padding: 30px 0;
+    }
+
+    header .logo {
+        font-size: 32px;
+    }
+
+    header nav {
+        float: none;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    header nav ul {
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    header nav ul li {
+        margin: 5px;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+
+    .hero--info {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .hero--info h1 {
+        font-size: 42px;
+    }
+
+    .hero img {
+        max-width: 60%;
+    }
+
+    .featured {
+        flex-direction: column-reverse;
+        padding: 60px 0;
+        gap: 30px;
+    }
+
+    .featured--img {
+        max-width: 70%;
+    }
+
+    .featured--info {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+
+    .featured--info h2 {
+        font-size: 32px;
+    }
+
+    .top {
+        padding-top: 60px;
+    }
+
+    .top h1 {
+        font-size: 36px;
+    }
+
+    .top nav ul li {
+        font-size: 20px;
+    }
+
+    .active, .non-active {
+        height: 75px;
+        margin: 20px;
+    }
+
+    .headphones {
+        width: 95%;
+        gap: 20px;
+    }
+
+    .headphones .block {
+        width: 200px;
+        height: 300px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .footer--menu {
+        width: 45%;
+    }
+
+    .subscribe {
+        width: 100%;
+    }
+
+    .footer--info {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .contacts {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .contacts ul {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* Mobile (below 768px) */
+@media (max-width: 480px) {
+    body {
+        font-size: 18px;
+    }
+
+    header .logo {
+        font-size: 28px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 5px 0;
+    }
+
+    header nav ul li a {
+        font-size: 16px;
+    }
+
+    .hero--info h1 {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+    .hero--info p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .hero--info .btn, .featured--info .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .hero img {
+        max-width: 80%;
+    }
+
+    .featured {
+        padding: 40px 0;
+    }
+
+    .featured--img {
+        max-width: 90%;
+    }
+
+    .featured--info h2 {
+        font-size: 28px;
+    }
+
+    .featured--info p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .top {
+        padding-top: 40px;
+    }
+
+    .top h1 {
+        font-size: 28px;
+    }
+
+    .top nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .top nav ul li {
+        font-size: 18px;
+    }
+
+    .active, .non-active {
+        height: 60px;
+        margin: 15px;
+    }
+
+    .active a {
+        padding: 0 20px;
+    }
+
+    .headphones {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 30px;
+    }
+
+    .headphones .block {
+        width: 280px;
+        height: 350px;
+    }
+
+    .menu {
+        flex-direction: column;
+    }
+
+    .footer--menu {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .subscribe p {
+        font-size: 20px;
+    }
+
+    .subscribe form {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .subscribe form input[type="email"] {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .subscribe form .btn {
+        width: 100%;
+    }
+
+    .footer--info ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer--info ul li {
+        margin: 10px 0;
+    }
 }
