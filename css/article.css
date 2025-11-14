@@ -174,9 +174,32 @@ footer {
     margin-right: auto;
 }
 
+.article img {
+    aspect-ratio: 32 / 9;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
 @media (max-width: 500px) {
     .article {
         width: 90%;
+    }
+
+    .article img {
+        aspect-ratio: 16 / 9;
+    }
+}
+
+@media (max-width: 900px) {
+    .article {
+        width: 70%;
+    }
+
+    .article img {
+        aspect-ratio: 21 / 9;
     }
 }
 
@@ -185,7 +208,7 @@ footer {
 }
 
 .article_title h2 {
-    font-size: clamp(0.8rem, calc(7vw + 1rem), 2.5rem);
+    font-size: clamp(0.7rem, calc(7vw + 1rem), 2.3rem);
 }
 
 .article_title h3 {
@@ -206,11 +229,3 @@ footer {
     padding-bottom: 20px;
 }
 
-.article img {
-    aspect-ratio: 16 / 9;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 16px;
-    margin-top: 10px;
-    margin-bottom: 30px;
-}
