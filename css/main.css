@@ -1,8 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import "cards.css";
 
 * {
     margin: 0;
     padding: 0;
+}
+
+.head {
+    display:  flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 body {
@@ -26,6 +33,7 @@ img{
 
 header{
     padding: 50px 0;
+    align-items: center;
 }
 
 header .logo {
@@ -35,7 +43,6 @@ header .logo {
 }
 
 header nav{
-    float: right;
     width: 50%;
 }
 
@@ -308,57 +315,4 @@ footer {
 .subscribe--form {
     display: flex;
     align-items: center;
-}
-
-.headphones {
-    padding: 50px 0;
-    display: flex;
-    justify-content: space-between;
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.headphones h3 {
-    font-size: 21px;
-    font-weight: 500;
-}
-
-.headphones h2 {
-    font-size: 21px;
-    font-weight: 600;
-}
-
-.headphones p {
-    font-size: 11px;
-    font-weight: 500;
-    color: #888888;
-}
-
-.headphones span {
-    width: 200px;
-    height: 70px;
-    background: white;
-    display: block;
-    align-self: center;
-    margin-top: 30px;
-    border-radius: 8px;
-    margin: 0 auto;
-
-    position: relative;
-    bottom: 25px;
-}
-
-.headphones img {
-    position: relative;
-    top: 25px;
-    margin: 0 auto;
-}
-
-.headphones .block {
-    text-align: left;
-    width: 250px;
-    height: 350px;
-    background: #845EC2;
-    border-radius: 16px;
 }
